@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVIGASI MENU */
+nav {
+  border: 2px solid red;
+  /* Navigasi mode sticky */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+.nav-content {
+  border: 1px solid black;
+  display: flex;
+  /* Menyusun elemen secara horizontal justify-content: space-between. */
+  justify-content: space-between;
+  width: 1150px;
+  margin: auto;
+  align-items: center;
+  height: 80px;
+  /* Tinggi Nav */
+}
+
+.nav-brand {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(216, 147, 20);
+}
+
+.nav-menu li {
+  /* inline-block elemen berjajar secara horizontal. */
+  display: inline-block;
+  margin-left: 40px;
+}
+.nav-menu li a {
+  font-size: 17px;
+  color: black;
+  font-weight: 550;
+}
+
+.nav-menu li a:hover {
+  color: rgb(235, 42, 42);
+}
+
+.nav-menu .btn-reg {
+  background-color: #2b3a55;
+  color: white;
+  padding: 15px 18px;
+  border-radius: 20px;
+}
+.nav-menu .btn-reg:hover {
+  background-color: rgb(235, 42, 42);
+  color: white;
+}
+/* END-NAVIGASI */
+
+/* HOME */
+main {
+  border: 2px solid pink;
+  width: 1150px;
+  display: flex;
+  padding: 20px 0;
+  margin: auto;
+  height: calc(100vh - 80px);
+  /* calc(100vh - 80px) Tinggi elemen diatur sebesar 100% tinggi viewport dikurangi 80px (misalnya tinggi navbar) */
+}
+.tagline {
+  border: 2px solid yellow;
+  margin-top: 50px;
+  /* padding-right: 20px; */
+}
+.tagline .tag {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Nunito";
+  color: rgb(43, 100, 204);
+  margin-bottom: 10px;
+}
+.tagline h2 {
+  font-size: 45px;
+  font-weight: 800;
+  font-family: "Nunito";
+  color: rgb(43, 100, 204);
+  margin-bottom: 20px;
+  line-height: 40px;
+  /* mengatur tingginya huruf */
+}
+.tagline .deskripsi {
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.tagline .btn-more {
+  background-color: rgb(235, 42, 42);
+  padding: 14px 18px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.tagline .btn-more:hover {
+  background-color: #2b3a55;
+}
+
+#home img {
+  width: 650px;
+  height: 450px;
+  border: 1px solid black;
+}
+/* END HOME */
+
+/* About */
+#about {
+  border: 1px solid black;
+  width: 1150px;
+  margin: auto;
+  /* display: flex untuk menampilkan elemen secara horizontal (___) */
+  display: flex;
+  padding: 80px 30px;
+}
+
+#about img {
+  height: 300px;
+  margin-right: 100px;
+  border: 1px solid gold;
+}
+
+.title {
+  font-family: "Nunito";
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: rgb(216, 147, 20);
+}
+
+.title-2 {
+  font-family: "Nunito";
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #0d4c92;
+}
+.visi-misi {
+  border: 1px solid brown;
+}
+.visi-misi p {
+  margin-bottom: 20px;
+}
+.visi-misi .btn-more {
+  display: inline-block;
+  background-color: rgb(235, 42, 42);
+  padding: 14px 18px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+/* END About */
+/* Fasilitas */
+
+#fasilitas {
+  border: 1px solid red;
+  width: 1150px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+#fasilitas .galeri {
+  border: 1px solid brown;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.galeri .card {
+  border: 1px solid blue;
+  width: 30%;
+  margin: 15px 0;
+}
+.card img {
+  border: 1px solid red;
+  width: 80%;
+  height: 160px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.card p {
+  font-weight: 600;
+}
+/* END Fasilitas */
+/* Contact */
+#contact {
+  border: 1px solid blue;
+  width: 1150px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+#contact .row {
+  border: 1px solid greenyellow;
+  display: flex;
+  justify-content: space-between;
+}
+#contact .row .map {
+  width: 550px;
+  height: 350px;
+}
+#contact .row .pesan {
+  width: 50%;
+  text-align: center;
+}
+#contact .pesan .box {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#contact .pesan input,
+#contact .pesan textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+}
+
+#contact .pesan .message {
+  height: 100px;
+}
+#contact .pesan textarea {
+  padding: 10px;
+  resize: none;
+}
+
+#contact .pesan .btn-send {
+  text-align: left; /* Pastikan elemen di dalamnya tetap di kiri */
+}
+
+#contact .pesan .btn-send button {
+  background-color: rgb(235, 42, 42);
+  padding: 14px 20px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+/* End Contact */
+
+/* Mobile-Nav */
+@media screen and (max-width: 576px) {
+  /* Sebelumnya, .nav-content menggunakan display: flex untuk menampilkan elemen secara horizontal (___).*/
+  /* Pada layar kecil, display: block mengatur ulang elemen di dalam .nav-content agar tampil vertikal (|). */
+
+  /* NAV RESPONSIVE */
+  .nav-content {
+    width: 100%;
+    display: block;
+    padding-left: 12px;
+    margin: auto;
+    height: 110px;
+  }
+  .nav-brand {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  .nav-menu {
+    padding-left: 4px;
+  }
+  .nav-menu li {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+  .nav-menu li a {
+    font-size: 17px;
+  }
+  .nav-menu .btn-reg {
+    font-size: 17px;
+    padding: 12px 15px;
+  }
+  /* END NAV */
+  /* HOME RESPONSIVE */
+  main {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    height: 700px;
+  }
+
+  .tagline {
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  .tagline .tag {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .tagline h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 45px;
+  }
+  .tagline .deskripsi {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .tagline .btn-more {
+    font-size: 15px;
+    padding: 12px 15px;
+  }
+
+  #home img {
+    width: 100%;
+    /* Lebar gambar disesuaikan dengan lebar layar. */
+  }
+  /* END HOME */
+  /* About RESPONSIVE */
+  #about {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px;
+  }
+  #about img {
+    height: 200px;
+    margin: 0 auto 20px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .title-2 {
+    font-size: 40px;
+  }
+  .visi-misi p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .visi-misi .btn-more {
+    font-size: 15px;
+    padding: 12px 18px;
+    margin-top: 10px;
+  }
+  /* END About */
+  /* Fasilitas Responsif */
+  #fasilitas {
+    width: 100%;
+    margin-top: 70px;
+    padding: 10px;
+  }
+  #fasilitas .title {
+    margin-bottom: 10px;
+  }
+  .galeri .card {
+    width: 50%;
+  }
+  .card img {
+    height: 150px;
+  }
+  .card p {
+    font-size: 15px;
+  }
+  /* End Fasilitas */
+  /* Contact Responsif */
+  #contact {
+    width: 100%; /* Memastikan lebar container penuh */
+    padding: 20px 10px; /* Kurangi padding agar lebih ramping */
+  }
+  #contact .row {
+    display: block;
+    width: 100%;
+  }
+  #contact .row .map {
+    width: 100%;
+  }
+  #contact .row .pesan {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #contact .pesan .box {
+    height: 35px;
+    margin-bottom: 10px;
+  }
+  #contact .pesan input,
+  #contact .pesan textarea {
+    font-size: 15px;
+  }
+  #contact .pesan .message {
+    height: 100px;
+  }
+  #contact .pesan .btn-send button {
+    font-size: 12px;
+    padding: 12px 20px;
+    text-align: left;
+  }
+}
